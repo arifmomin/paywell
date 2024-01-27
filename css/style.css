@@ -1,0 +1,741 @@
+/* ===========================font link start======================== */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ---------------------------font link end--------------------------- */
+/* =======================common css start==================== */
+* {
+    margin: 0%;
+    padding: 0%;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    padding: 0%;
+    margin: 0%;
+    outline: 0;
+}
+
+:root {
+    --brand-color: #00A651;
+    --rubik: 'Rubik', sans-serif;
+}
+
+/* ----------------------common css end---------------------- */
+/* ===================fixed button start================== */
+.fixed{
+    position: fixed !important;
+    top:100px;
+    right: 0;
+    z-index:999;
+}
+.fb_btn {
+    background: #3b5998;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: 35px;
+    height: 45px;
+    padding: 8px 8px;
+    z-index: 999;
+    transition: all linear .3s;
+    position: relative;
+    display: block;
+}
+.insta_btn{
+    top: 160px;
+    background: #e2205d;
+}
+.lkn_btn{
+    top: 218px;
+    background: #007bb5;
+}
+.yt_btn{
+    top: 277px;
+    background: #d02020;
+}
+.fb_btn i {
+    font-size: 18px;
+    color: #fff;
+    padding: 5px;
+}
+.fb_btn a {
+    font-size: 13px;
+    font-weight: 300;
+    font-family: var(--rubik);
+    color: #fff;
+    line-height: 43px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 1px;
+    right: -66px;
+    visibility: hidden;
+    transition: all linear .1s;
+}
+.fb_btn:hover{
+    width: 170px;
+}
+.fb_btn:hover a{
+    display: inline-block;
+   visibility: visible;
+   right: 30px;
+
+} 
+/* -------------------fixed button end----------------- */
+
+/* ========================menu part start====================== */
+.bg-body-tertiary {
+    background: transparent !important;
+}
+
+.menu_bar {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+}
+
+.navbar-brand img {
+    width: 113px !important;
+}
+
+.navbar-expand-lg .navbar-nav {
+    align-items: center;
+    margin: 0% !important;
+    gap: 25px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: end;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 13px;
+    font-weight: 500;
+    font-family: var(--rubik);
+    color: #eee;
+    transition: all linear .2s;
+    padding: 0% !important;
+}
+
+.navbar-nav .nav-item .active {
+    color: var(--brand-color);
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--brand-color) !important;
+}
+
+.nav-item .home_icon {
+    font-size: 14px;
+    color: var(--brand-color);
+    margin-right: 5px;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    background: var(--brand-color);
+}
+
+.dropdown-menu li .dropdown-item {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: var(--rubik);
+    color: #f4f4f4;
+}
+
+.dropdown-menu li .dropdown-item:hover {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background: transparent;
+}
+
+.menu_button a {
+    width: 80px;
+    height: 35px;
+    background: var(--brand-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: var(--rubik);
+    color: #fff;
+    transition: all linear .3s;
+}
+
+.menu_button a:hover {
+    background: #1e7e34;
+}
+
+.menu_button a span {
+    font-size: 11px;
+    color: #fff;
+    margin-right: 7px;
+}
+
+.menu_fixed {
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    background: #FFFFFF !important;
+    z-index: 9999;
+    animation: slide 1s;
+}
+
+@keyframes slide {
+    from {
+        top: -20%;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+.menu_fixed .navbar-nav .nav-item .nav-link {
+    color: #000;
+}
+
+/* -------------------------menu part end------------------------ */
+/* ========================banner part start====================== */
+.slick-dots {
+    position: absolute;
+    bottom: 10%;
+    left: 48.5%;
+    display: flex;
+    gap: 15px;
+}
+
+.slick-dots li button {
+    font-size: 0px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+}
+
+.slick-dots .slick-active button {
+    background: var(--brand-color);
+}
+
+.banner_col {
+
+    background: url(../image/Banner\ background\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner_col_two {
+    background: url(../image/Banner\ background\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner_col_three {
+    background: url(../image/Banner\ background\ \(3\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner_col::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background: rgba(0, 0, 0, 0.60);
+    z-index: 1;
+}
+
+.banner_row .searchbox input {
+    z-index: 999;
+}
+
+.banner_heading {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner_heading h2 {
+    font-size: 30px;
+    font-weight: 300;
+    font-family: var(--rubik);
+    color: #FFFFFF;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    z-index: 500;
+}
+
+.banner_heading h1 {
+    font-size: 60px;
+    font-weight: 500;
+    font-family: var(--rubik);
+    color: #FFFFFF;
+    margin-top: 10px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    z-index: 500;
+}
+
+.banner_button_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 40px;
+    z-index: 999;
+}
+
+.banner_button a span {
+    margin-right: 3px;
+}
+
+.banner_button a {
+    padding: 14px 30px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--rubik);
+    color: var(--brand-color);
+    position: relative;
+    z-index: 500;
+}
+
+.banner_button a:hover {
+    color: #fff;
+}
+
+.banner_button a::after {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background: var(--brand-color);
+    z-index: -1;
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear .2s;
+}
+
+.banner_button a:hover::after {
+    width: 100%;
+    visibility: visible;
+    opacity: 50%;
+}
+
+.banner_button a::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    background: #00a651;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all linear .4s;
+    z-index: -1;
+    visibility: visible;
+    opacity: 0;
+}
+
+.banner_button a:hover::before {
+    width: 100%;
+    visibility: visible;
+    opacity: 4;
+}
+/* .fixed
+{
+    position: fixed;
+    top:100px;
+    right: 0;
+    width:250px;
+    height:200px;
+    z-index:9999;
+}
+.button 
+{
+display: block;
+border: 0;
+line-height: 3;
+margin-bottom: 0.3em;
+outline: none;
+text-decoration: none;
+color: #fff;
+width: 250px;
+font-size: 16px;
+border-radius: 20px 0 0 20px;
+}
+.buttonDiv 
+{
+padding: 0 21px;
+border-radius: 30px 0 0 30px;
+}
+.buttonDiv:hover
+{
+    background: white;
+    transition: margin 500ms;
+    margin-left: -20px;
+}
+/* Button Css 
+.bg-b-blue
+{
+    background: linear-gradient(45deg,#1a77e2,#bfd6f1);
+}
+.bg-b-blue:hover
+{
+    background:linear-gradient(45deg,#1a77e2,#4485d2);
+}
+.bg-b-green
+{
+    background: linear-gradient(45deg,#2ed8b6,#59e0c5);
+}
+.bg-b-orange
+{
+    background: linear-gradient(45deg, #fda582, #f7cf68);
+}
+.bg-b-orange:hover
+{
+    background:linear-gradient(45deg, #fda582, #fcac7d);
+}
+.bg-b-purple
+{
+    background: linear-gradient(45deg, #a52dd8, #e29bf1);
+}
+.bg-b-purple:hover
+{
+    background:linear-gradient(45deg, #a52dd8, #b143dd);
+}
+ */
+
+
+
+
+
+/* -------------------------banner part end------------------------ */
+/* ========================know part start====================== */
+#know {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #fff;
+}
+
+.know_heading h2 {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: var(--rubik);
+    color: #111;
+    text-align: center;
+}
+
+.know_heading p {
+    width: 985px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
+    font-family: var(--rubik);
+    color: #111;
+    text-align: center;
+    margin: 0% auto;
+    margin-top: 15px;
+}
+
+/* -------------------------know part end------------------------ */
+/* ========================service part start====================== */
+#service {
+    padding-bottom: 140px;
+    background: #fff;
+}
+
+.service_heading h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    font-family: var(--rubik);
+    color: #111;
+    text-align: center;
+}
+
+.service_heading p {
+    font-size: 11px;
+    font-weight: 500;
+    font-family: var(--rubik);
+    line-height: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #111;
+    margin-top: 18px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.service_heading p::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    background: var(--brand-color);
+    top: 8px;
+    left: 40%;
+}
+
+.service_heading p::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    background: var(--brand-color);
+    top: 8px;
+    right: 40%;
+}
+
+.service_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    row-gap: 70px;
+}
+
+.service_colam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.service_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.service_col .service_img {
+    width: 80px !important;
+}
+
+.service_col .service_text h3 {
+    margin-top: 26px;
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--rubik);
+    color: #000;
+}
+
+.service_col .service_text p {
+    width: 330px;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: var(--rubik);
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.service_col .service_text p span {
+    font-size: 12px;
+    color: var(--brand-color);
+    margin-left: 3px;
+}
+
+/* -------------------------service part end------------------------ */
+/* ========================about part start====================== */
+#about {
+    display: flex;
+
+    background: #F7F7F7;
+}
+
+.about_img img{
+    width: 100% !important;
+    height: 100%;
+
+}
+
+.about_main_row {
+    width: 50%;
+    margin: 30px;
+    background: #fff;
+}
+
+.about_heading h2 {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: var(--rubik);
+    color: #000;
+}
+
+.about_row {
+    padding: 90px 60px;
+    background: #fff;
+}
+
+.about_slider_img img {
+    width: 80px !important;
+    border: 1px solid #00000073;
+    border-radius: 4px;
+}
+
+.about_col {
+    margin-top: 15px;
+    border: 1px solid #F3F3F3;
+    background: transparent;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+
+.slider_heading p {
+    width: 100%px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--rubik);
+    color: #000;
+    line-height: 24px;
+
+}
+
+.slider_list .slider_item {
+    font-size: 15px;
+    font-weight: 300;
+    font-family: var(--rubik);
+    color: #7F7F7F;
+    line-height: 24px;
+}
+.about_slider_row .prev {
+    position: absolute;
+    top: 0%;
+    left: -10%;
+    width: 30px;
+    height: 300px;
+    background: #343A40;
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .2s;
+}
+.about_slider_row .prev:hover{
+    background: #000;
+}
+.about_slider_row .next {
+    position: absolute;
+    top: 0%;
+    right: -10%;
+    width: 30px;
+    height: 300px;
+    background: #343A40;
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .2s;
+}
+.about_slider_row .next:hover{
+    background: #000;
+}
+/* -------------------------about part end------------------------ */
+/* ========================counter part start====================== */
+#counter_part{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: url(../image/counter.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+#counter_part::after{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.60);
+    z-index: -1;
+}
+.counter_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.counter_col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.counter_img img{
+    margin: 0% auto;
+    width: 60px !important;
+}
+.counter_heading{
+    text-align: center;
+}
+.counter_heading h2{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: var(--rubik);
+    line-height: 48px;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.counter_heading h3{
+    width: 105px;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: var(--rubik);
+    color: #FFFFFF;
+}
+    
+
+/* -------------------------counter part end------------------------ */
+/* ========================menu part start====================== */
+
+/* -------------------------menu part end------------------------ */
+/* ========================menu part start====================== */
+
+/* -------------------------menu part end------------------------ */
+/* ========================menu part start====================== */
+
+/* -------------------------menu part end------------------------ */
+
